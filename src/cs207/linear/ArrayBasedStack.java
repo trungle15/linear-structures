@@ -64,6 +64,7 @@ public class ArrayBasedStack<T> implements Stack<T> {
     if (this.isFull()) {
       throw new Exception("full");
     } // if full
+    this.values[size] = val;
     this.size++;
   } // put(T)
 
